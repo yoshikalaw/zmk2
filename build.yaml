@@ -21,7 +21,15 @@
 include:
   - board: nice_nano
     shield: splitkb_aurora_sweep_left
+    cmake-args: -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO_LOCK_ON_DISCONNECT=n
+    cmake-args: -DCONFIG_BT_CTLR_PHY_2M=n
+    cmake-args: -DCONFIG_ZMK_BLE_PASSKEY_ENTRY=y
   - board: nice_nano
     shield: splitkb_aurora_sweep_right
+    cmake-args: -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO_LOCK_ON_DISCONNECT=n
+    cmake-args: -DCONFIG_BT_CTLR_PHY_2M=n
+    cmake-args: -DCONFIG_ZMK_BLE_PASSKEY_ENTRY=y
   - board: nice_nano
     shield: settings_reset
